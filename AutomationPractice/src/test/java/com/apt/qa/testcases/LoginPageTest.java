@@ -22,7 +22,7 @@ public class LoginPageTest extends TestBase{
 	public void loginPageTitleTest(){
 		loginPage.login();
 		String title = driver.getCurrentUrl();
-		Assert.assertEquals(title, "http://automationpractice.com/index.php?controller=authentication&back=my-account");
+		Assert.assertEquals(title, "http://automationpractice.com/index.php?controller=authentication&back=my-account2");
 	}
 		
 	
