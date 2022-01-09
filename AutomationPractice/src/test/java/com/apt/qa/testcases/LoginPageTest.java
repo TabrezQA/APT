@@ -22,13 +22,14 @@ public class LoginPageTest extends TestBase{
 	public void loginPageTitleTest(){
 		loginPage.login();
 		String title = driver.getCurrentUrl();
-		Assert.assertEquals(title, "http://automationpractice.com/index.php?controller=authentication&back=my-account2");
+		Assert.assertEquals(title, "http://automationpractice.com/index.php?controller=authentication&back=my-account");
 	}
 		
 	
 	
 	@AfterMethod
-	public void tearDown(){
+	public void tearDown() throws InterruptedException{
+		Thread.sleep(1000);
 		driver.quit();
 	}
 	

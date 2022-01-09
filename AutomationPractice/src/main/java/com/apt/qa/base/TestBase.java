@@ -41,7 +41,7 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Tabrez\\.jenkins\\workspace\\APT\\AutomationPractice\\driver\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\USER\\git\\APT\\AutomationPractice\\driver\\chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
 		
